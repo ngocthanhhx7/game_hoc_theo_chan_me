@@ -1,0 +1,51 @@
+[
+  {
+    "id": "galilee",
+    "path": "assets/images/galilee.webp",
+    "generated": true,
+    "tool": "Built-in image generation",
+    "date": "2026-11-13",
+    "bytes": 375946,
+    "width": 1672,
+    "height": 941,
+    "note": "AI illustration, not documentary evidence or historic artwork."
+  },
+  {
+    "id": "candle-reflection",
+    "path": "assets/images/candle-reflection.webp",
+    "generated": true,
+    "tool": "Built-in image generation",
+    "date": "2026-11-13",
+    "bytes": 111802,
+    "width": 1672,
+    "height": 941,
+    "note": "AI illustration, not documentary evidence or historic artwork."
+  },
+  {
+    "id": "marian-background",
+    "path": "assets/images/marian-background.webp",
+    "generated": true,
+    "tool": "Built-in image generation",
+    "date": "2026-11-13",
+    "bytes": 124774,
+    "width": 1672,
+    "height": 941,
+    "note": "AI illustration, not documentary evidence or historic artwork."
+  },
+  {
+    "id": "marian-logo",
+    "path": "assets/images/marian-logo-128.webp",
+    "generated": true,
+    "tool": "Built-in image generation",
+    "date": "2026-11-13",
+    "note": "Original generated Marian M, veil and lily mark. PNG/ICO favicon derivatives use the same mark."
+  },
+  {
+    "id": "marian-light-background",
+    "path": "assets/images/marian-light-background.webp",
+    "generated": true,
+    "tool": "Built-in image generation",
+    "date": "2026-11-13",
+    "note": "User selected this luminous blue-and-white Marian background; UI palette changed separately in CSS."
+  }
+]

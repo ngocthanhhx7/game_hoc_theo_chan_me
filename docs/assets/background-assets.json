@@ -1,0 +1,38 @@
+[
+  {
+    "name": "cathedral-nave",
+    "source": "https://commons.wikimedia.org/wiki/File:Chartres,_Cath%C3%A9drale,_nef_central,_vue_vers_le_haut.jpg",
+    "author": "Txllxt TxllxT",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "path": "assets/images/cathedral-nave.webp",
+    "bytes": 321958,
+    "width": 1920,
+    "height": 1280,
+    "changes": "Resized and WebP encoded; CSS crop and overlay. Derivative retains original license."
+  },
+  {
+    "name": "chartres-glass",
+    "source": "https://commons.wikimedia.org/wiki/File:Stained_glass_window,_Chartres_Cathedral,_France_(25846429952).jpg",
+    "author": "David Whelan",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "path": "assets/images/chartres-glass.webp",
+    "bytes": 381672,
+    "width": 900,
+    "height": 1431,
+    "changes": "Resized and WebP encoded; CSS crop and overlay. Derivative retains original license."
+  },
+  {
+    "name": "annunciation",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Anunciaci%C3%B3n,_by_Fra_Angelico,_from_Prado_in_Google_Earth.jpg",
+    "author": "Fra Angelico; reproduction from Prado in Google Earth",
+    "license": "Public Domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "path": "assets/images/annunciation.webp",
+    "bytes": 415700,
+    "width": 1280,
+    "height": 1263,
+    "changes": "Resized and WebP encoded; CSS crop and overlay. Derivative retains original license."
+  }
+]
