@@ -3,6 +3,7 @@ export const ARTWORKS: Record<string, SacredArtwork> = {
 "galilee":{"path": "assets/images/galilee.webp", "smallPath": "assets/images/galilee-small.webp", "title": "Khung cảnh Galilê · minh họa AI", "author": "Marian Light Journey", "license": "Minh họa AI", "licenseUrl": "", "source": "", "position": "75% 50%", "generated": true},
 "candle":{"path": "assets/images/candle-reflection.webp", "smallPath": "assets/images/candle-reflection-small.webp", "title": "Ánh nến và lời nguyện · minh họa AI", "author": "Marian Light Journey", "license": "Minh họa AI", "licenseUrl": "", "source": "", "position": "75% 50%", "generated": true},
 
+  "virgin-prayer": {"path": "assets/images/virgin-in-prayer.webp", "title": "Đức Maria cầu nguyện", "author": "Giovanni Battista Salvi da Sassoferrato", "license": "Public Domain", "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/", "source": "https://commons.wikimedia.org/wiki/File:Sassoferrato_-_Jungfrun_i_b%C3%B6n.jpg", "position": "50% 45%"},
   "mary": {
     "path": "assets/images/virgin-annunciate.webp",
     "title": "Virgin Annunciate",

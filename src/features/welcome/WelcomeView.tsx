@@ -85,8 +85,7 @@ export const WelcomeView: React.FC = () => {
       <div className={styles.eventBadge}>GIA ĐÌNH TẬN HIẾN · LƯƠNG SƠN · 25.11.2026</div>
       <div className={styles.roseWindow}>
         <span className={styles.artNote}>Một hành trình, cùng Mẹ.</span>
-        <SacredArt priority className={styles.portrait} />
-        <span className={styles.artSeal} aria-hidden="true">M</span>
+        <SacredArt kind="virgin-prayer" priority showCaption={false} className={styles.portrait} />
       </div>
       <div className={styles.heroContent}>
         <p className={styles.subHeading}>MARIAN LIGHT JOURNEY</p>

@@ -19,6 +19,7 @@
 | marian-background | Generated for Marian Light Journey | AI-generated illustration; not a historical source | 124774 byte |
 | marian-logo | Generated for Marian Light Journey | AI-generated illustration; not a historical source | 14938 byte |
 | marian-light-background | Generated for Marian Light Journey | AI-generated illustration; not a historical source | 95698 byte |
+| virgin-in-prayer | [Sassoferrato](https://commons.wikimedia.org/wiki/File:Sassoferrato_-_Jungfrun_i_b%C3%B6n.jpg) | Public Domain | 130226 byte |
 | virgin-annunciate | [Antonello da Messina; reproduction The Yorck Project](https://commons.wikimedia.org/wiki/File:Antonello_da_Messina_-_Virgin_Annunciate_-_Galleria_Regionale_della_Sicilia,_Palermo.jpg) | Public Domain | 279052 byte |
 
 Ảnh CC BY-SA được thu nhỏ, chuyển WebP và có crop/lớp phủ khi hiển thị; bản chuyển đổi giữ cùng giấy phép. Các ghi nhận cụ thể có trong footer và từng tranh. Không tuyên bố ảnh AI là Public Domain hoặc tư liệu lịch sử.
@@ -28,3 +29,5 @@ Font: Lora, Nunito, Patrick Hand, Vietnamese + Latin WOFF2 self-hosted; giấy p
 Logo: dấu M, khăn choàng, hoa huệ do công cụ tạo ảnh tạo cho dự án; header dùng WebP 64/128px, favicon PNG 32/192px, ICO nhiều cỡ, Apple touch icon 180px.
 
 Đính chính: danh mục cũ liệt kê một số file SVG chưa tồn tại. Danh mục hiện tại chỉ ghi file đã lưu. Âm thanh game là Web Audio tổng hợp, không phải giọng đọc hoặc thánh ca thu âm.
+
+Tranh trang chào: Đức Maria cầu nguyện (Sassoferrato, 1640–1650), tham khảo [Pinterest](https://www.pinterest.com/pin/394909461058269714/), tải bản chất lượng cao từ Wikimedia Commons. Ghi nguồn tại footer, không đặt chú thích hoặc huy hiệu đè dưới tranh.

@@ -176,6 +176,17 @@
       "source": "https://commons.wikimedia.org/wiki/File:Antonello_da_Messina_-_Virgin_Annunciate_-_Galleria_Regionale_della_Sicilia,_Palermo.jpg",
       "verified": true,
       "bytes": 279052
+    },
+    {
+      "id": "virgin-in-prayer",
+      "path": "assets/images/virgin-in-prayer.webp",
+      "type": "image/webp",
+      "author": "Giovanni Battista Salvi da Sassoferrato",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sassoferrato_-_Jungfrun_i_b%C3%B6n.jpg",
+      "generated": false,
+      "bytes": 130226,
+      "verified": true
     }
   ]
 }
