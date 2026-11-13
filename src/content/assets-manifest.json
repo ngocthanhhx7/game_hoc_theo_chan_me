@@ -1,0 +1,181 @@
+{
+  "version": "2.0.0",
+  "name": "Marian Light Journey verified local assets",
+  "assets": [
+    {
+      "id": "cathedral-nave",
+      "path": "assets/images/cathedral-nave.webp",
+      "type": "image/webp",
+      "author": "Txllxt TxllxT",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chartres,_Cath%C3%A9drale,_nef_central,_vue_vers_le_haut.jpg",
+      "generated": false,
+      "bytes": 321958,
+      "verified": true
+    },
+    {
+      "id": "chartres-glass",
+      "path": "assets/images/chartres-glass.webp",
+      "type": "image/webp",
+      "author": "David Whelan",
+      "license": "CC0 1.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Stained_glass_window,_Chartres_Cathedral,_France_(25846429952).jpg",
+      "generated": false,
+      "bytes": 381672,
+      "verified": true
+    },
+    {
+      "id": "annunciation",
+      "path": "assets/images/annunciation.webp",
+      "type": "image/webp",
+      "author": "Fra Angelico; reproduction from Prado in Google Earth",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Anunciaci%C3%B3n,_by_Fra_Angelico,_from_Prado_in_Google_Earth.jpg",
+      "generated": false,
+      "bytes": 415700,
+      "verified": true
+    },
+    {
+      "id": "immaculate",
+      "path": "assets/images/immaculate.webp",
+      "type": "image/webp",
+      "author": "Bartolomé Esteban Murillo",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Murillo_immaculate_conception.jpg",
+      "generated": false,
+      "bytes": 108116,
+      "verified": true
+    },
+    {
+      "id": "madonna-child",
+      "path": "assets/images/madonna-child.webp",
+      "type": "image/webp",
+      "author": "Raphael",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Raffael_051.jpg",
+      "generated": false,
+      "bytes": 95198,
+      "verified": true
+    },
+    {
+      "id": "crucifixion",
+      "path": "assets/images/crucifixion.webp",
+      "type": "image/webp",
+      "author": "Pietro Perugino; reproduction Walters Art Museum",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Perugino_-_The_Crucifixion_-_Walters_371174.jpg",
+      "generated": false,
+      "bytes": 235954,
+      "verified": true
+    },
+    {
+      "id": "visitation",
+      "path": "assets/images/visitation.webp",
+      "type": "image/webp",
+      "author": "Giotto; reproduction Web Gallery of Art",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Giotto,_Lower_Church_Assisi,_The_Visitation_01.jpg",
+      "generated": false,
+      "bytes": 109564,
+      "verified": true
+    },
+    {
+      "id": "joachim-anne",
+      "path": "assets/images/joachim-anne.webp",
+      "type": "image/webp",
+      "author": "Giotto; reproduction Web Gallery of Art",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Giotto_-_Scrovegni_-_-06-_-_Meeting_at_the_Golden_Gate.jpg",
+      "generated": false,
+      "bytes": 70700,
+      "verified": true
+    },
+    {
+      "id": "assumption",
+      "path": "assets/images/assumption.webp",
+      "type": "image/webp",
+      "author": "Titian",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Assumption_of_the_Virgin_–_Titian.jpg",
+      "generated": false,
+      "bytes": 95734,
+      "verified": true
+    },
+    {
+      "id": "fatima",
+      "path": "assets/images/fatima.webp",
+      "type": "image/webp",
+      "author": "Unknown artist; uploaded by Twillisjr; Saint Mary’s Cathedral, Colorado Springs",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_Fatima.jpg",
+      "generated": false,
+      "bytes": 283022,
+      "verified": true
+    },
+    {
+      "id": "galilee",
+      "path": "assets/images/galilee.webp",
+      "type": "image/webp",
+      "author": "Generated for Marian Light Journey",
+      "license": "AI-generated illustration; not a historical source",
+      "source": "",
+      "generated": true,
+      "bytes": 375946,
+      "verified": true
+    },
+    {
+      "id": "candle-reflection",
+      "path": "assets/images/candle-reflection.webp",
+      "type": "image/webp",
+      "author": "Generated for Marian Light Journey",
+      "license": "AI-generated illustration; not a historical source",
+      "source": "",
+      "generated": true,
+      "bytes": 111802,
+      "verified": true
+    },
+    {
+      "id": "marian-background",
+      "path": "assets/images/marian-background.webp",
+      "type": "image/webp",
+      "author": "Generated for Marian Light Journey",
+      "license": "AI-generated illustration; not a historical source",
+      "source": "",
+      "generated": true,
+      "bytes": 124774,
+      "verified": true
+    },
+    {
+      "id": "marian-logo",
+      "path": "assets/images/marian-logo-128.webp",
+      "type": "image/webp",
+      "author": "Generated for Marian Light Journey",
+      "license": "AI-generated illustration; not a historical source",
+      "source": "",
+      "generated": true,
+      "bytes": 14938,
+      "verified": true
+    },
+    {
+      "id": "marian-light-background",
+      "path": "assets/images/marian-light-background.webp",
+      "type": "image/webp",
+      "author": "Generated for Marian Light Journey",
+      "license": "AI-generated illustration; not a historical source",
+      "source": "",
+      "generated": true,
+      "bytes": 95698,
+      "verified": true
+    },
+    {
+      "id": "virgin-annunciate",
+      "path": "assets/images/virgin-annunciate.webp",
+      "type": "image/webp",
+      "author": "Antonello da Messina; reproduction The Yorck Project",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Antonello_da_Messina_-_Virgin_Annunciate_-_Galleria_Regionale_della_Sicilia,_Palermo.jpg",
+      "verified": true,
+      "bytes": 279052
+    }
+  ]
+}

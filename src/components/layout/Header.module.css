@@ -1,0 +1,30 @@
+.header { position:relative; z-index:100; display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:78px; padding:12px clamp(20px,4vw,60px); border-bottom:1px solid #d6b36b33; background:#061126; }
+.left { display:flex; align-items:center; gap:36px; min-width:0; flex:1; }
+.logoBtn { display:flex; align-items:center; gap:12px; text-align:left; flex-shrink:0; }
+.marianEmblem { display:grid; place-items:center; position:relative; width:38px; height:46px; border:1px solid #c9a96c99; border-radius:50% 50% 6px 6px; color:#e0c185; }
+.cross { font:26px var(--font-serif); }
+.fleur { position:absolute; right:2px; bottom:0; font-size:11px; }
+.titleGroup { display:flex; flex-direction:column; gap:4px; }
+.mainTitle { font:600 20px var(--font-serif); color:#ead1a0; }
+.subTitle { font-size:9px; letter-spacing:.13em; color:#aebdd3; }
+.nav { display:flex; align-items:center; gap:6px; margin-left:auto; }
+.navItem { color:#bfccdf; font-size:13px; padding:11px 12px; min-height:44px; white-space:nowrap; border-radius:8px; display:flex; align-items:center; gap:5px; }
+.navItem:hover { background:#172844; color:#eddaae; }
+.active { color:#ebcb8a; background:#193152; box-shadow:inset 0 -2px #d6b36b; }
+.controlsGroup { display:flex; gap:6px; }
+.toolBtn { display:flex; align-items:center; justify-content:center; gap:6px; min-width:38px; min-height:40px; color:#c3cfe0; border:1px solid #c6d5eb1a; border-radius:9px; padding:8px; background:#0d1d35; }
+.toolBtn:hover { color:#f1d69b; background:#20344e; }
+.toolLabel { display:none; }
+@media(max-width:1200px) { .header { gap:16px; padding-inline:20px; } .left { gap:20px; } .navItem { font-size:12px; padding-inline:8px; } .mainTitle { font-size:18px; } .subTitle { font-size:8px; } }
+@media(max-width:950px) { .header { flex-wrap:wrap; gap:10px; padding-bottom:0; } .left { display:contents; } .logoBtn { order:1; } .right { order:2; margin-left:auto; } .nav { order:3; flex-basis:100%; margin-left:0; justify-content:center; padding:4px 0 8px; } .navItem { flex:1; justify-content:center; font-size:12px; padding-inline:4px; } .mainTitle { font-size:19px; } .toolBtn { min-height:40px; min-width:36px; } }
+@media(max-width:480px) { .header { padding:12px 14px 0; } .titleGroup { display:none; } .marianEmblem { width:36px; height:44px; } .controlsGroup { gap:5px; } .toolBtn { width:44px; height:44px; padding:6px; } .navItem { font-size:11px; min-width:0; white-space:normal; text-align:center; line-height:1.3; } .navItem svg { display:none; } }
+.marianLogo { display:block; width:48px; height:48px; object-fit:contain; flex-shrink:0; }
+@media(max-width:480px) { .marianLogo { width:42px; height:42px; } }
+.header { background:#fafdff; border-bottom-color:#aac3e080; box-shadow:0 2px 14px #315a8c0c; }
+.mainTitle { color:#285a96; }
+.subTitle { color:#6582a3; }
+.navItem { color:#4b6d95; }
+.navItem:hover { background:#e9f2ff; color:#285c9b; }
+.active { color:#215b9e; background:#e4effd; box-shadow:inset 0 -2px #5091d2; }
+.toolBtn { color:#3e6a99; border-color:#b6cce780; background:#f1f6fd; }
+.toolBtn:hover { background:#e3efff; color:#1a5798; }

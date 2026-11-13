@@ -1,0 +1,75 @@
+.container { max-width:1500px; margin:auto; padding:26px clamp(20px,4vw,60px); display:flex; flex-direction:column; gap:18px; }
+.heading { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.heading h1 { margin-top:6px; }
+.handNote { font:25px var(--font-hand); color:#e9cc91; transform:rotate(-3deg); }
+.cipherAltar { background:linear-gradient(110deg,#132b50e8,#0c1a32ed),url('../../../public/assets/images/chartres-glass.webp') center/cover; padding:18px 24px 24px; border:1px solid #b8995d66; border-radius:16px 16px 6px 6px; }
+.cipherMeta { display:flex; justify-content:space-between; gap:12px; font-size:11px; color:#dac38f; letter-spacing:.06em; margin-bottom:18px; }
+.cipherLetters { display:flex; justify-content:center; align-items:center; gap:clamp(10px,2vw,32px); }
+.wordGroup { display:flex; gap:6px; }
+.cipherBox { width:clamp(40px,4.5vw,68px); height:clamp(48px,5.5vw,78px); background:#142843; border:1px solid #c8b4814d; border-radius:48% 48% 6px 6px; display:grid; place-items:center; color:#cbbd94; font:700 28px var(--font-sans); box-shadow:inset 0 0 16px #37639230; }
+.revealedCipher { background:#ecd09a; color:#10223e; border-color:#f5dfad; animation:tileReveal .35s ease-out; }
+.boardLayout { display:grid; grid-template-columns:250px minmax(0,1fr); gap:20px; }
+.selector { padding:20px; border:1px solid #d6b36b26; background:#0c1b32eb; border-radius:12px; }
+.clueGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:18px 0; }
+.medallion { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; min-height:65px; border-radius:16px 16px 7px 7px; border:1px solid #ffffff14; background:#1b2b46; color:#b8c7de; font-size:17px; transition:transform .2s,background .2s; }
+.medallion:hover { transform:translateY(-3px); background:#2c4060; }
+.medallion.active { background:#e8c888; border-color:#f3dfa8; color:#17243a; transform:rotate(-3deg); }
+.medallion.solved:not(.active) { color:#d3cc9a; background:#244248; }
+.selector > button { width:100%; font-size:12px; padding-inline:4px; }
+.clueStage { min-width:0; background:#0e1d34f2; border-radius:8px 24px 8px 8px; display:grid; grid-template-columns:180px minmax(0,1fr); overflow:hidden; animation:stageIn .3s ease-out; border:1px solid #c2a15b33; }
+.clueArtwork { padding:0; display:flex; flex-direction:column; background:#091427; }
+.clueArtwork > div { flex:1; min-height:260px; }
+.clueArtwork figcaption { padding:8px; font-size:9px; }
+.clueContent { padding:26px; min-width:0; }
+.clueContent .game-eyebrow { justify-content:space-between; }
+.prompt { font:800 clamp(23px,2.2vw,34px)/1.45 var(--font-sans); color:#f4efdf; margin:20px 0 12px; }
+.answer { padding:18px; border-left:3px solid #d6b36b; background:#061126a8; margin-top:20px; border-radius:3px 12px 12px 3px; }
+.answer > span { display:block; font-size:11px; text-transform:uppercase; color:#c4b894; }
+.answer strong { font:700 24px var(--font-serif); color:#e5c383; }
+.answer p { font-size:15px; margin-top:8px; color:#d2d9e6; }
+.answer small { display:block; font-size:11px; color:#afb9cd; margin-top:10px; }
+.soloForm { margin-top:20px; }
+.soloForm label { display:block; font-size:13px; margin-bottom:6px; }
+.soloForm > div { display:flex; gap:8px; }
+.soloForm input, .container select { min-width:0; border:1px solid #d6b36b55; border-radius:8px; background:#08162f; color:#f7f0e2; padding:12px; font:17px var(--font-sans); }
+.soloForm input { flex:1; width:100%; }
+.soloForm p { color:#ffb9b3; margin-top:10px; }
+.solvedText { color:#bcdcc1; display:flex; align-items:center; gap:8px; margin-top:20px; }
+.completed { display:flex; align-items:center; gap:20px; padding:24px; background:#233a45ed; border:1px solid #d6b36b; border-radius:12px; color:#e8cb91; }
+.completed div { flex:1; }
+.completed p { color:#cbd3df; }
+.earlyLabel { display:block; margin-top:20px; }
+.container select { width:100%; margin-bottom:20px; }
+@keyframes tileReveal { from{transform:rotateY(90deg);opacity:0} to{transform:rotateY(0);opacity:1} }
+@keyframes stageIn { from{transform:translateY(8px);opacity:.6} to{transform:translateY(0);opacity:1} }
+@media(max-width:950px) { .boardLayout { grid-template-columns:200px minmax(0,1fr); } .clueStage { grid-template-columns:1fr; } .clueArtwork { display:none; } }
+@media(max-width:700px) { .container { padding:22px 18px; } .heading { align-items:start; } .handNote { display:none; } .cipherAltar { padding:16px 12px; } .cipherLetters { flex-wrap:wrap; gap:14px; } .cipherBox { width:32px; height:44px; font-size:23px; } .wordGroup { gap:4px; } .boardLayout { grid-template-columns:1fr; gap:16px; } .selector { padding:16px; } .clueGrid { grid-template-columns:repeat(6,minmax(0,1fr)); gap:6px; margin:12px 0; } .medallion { min-height:55px; font-size:14px; } .medallion svg { width:15px; } .selector .game-help { display:none; } .clueArtwork { display:block; height:180px; position:relative; } .clueArtwork > div { min-height:0; height:100%; } .clueArtwork img { object-position:center 40%; } .clueArtwork figcaption { position:absolute; inset:auto 0 0; background:#061126cb; } .clueContent { padding:20px; } .prompt { font-size:24px; margin-top:16px; } .completed { flex-wrap:wrap; } .completed button { width:100%; } .soloForm > div { flex-direction:column; } }
+@media(min-width:1100px) and (max-height:800px) { .container { padding-block:18px; gap:12px; } .cipherAltar { padding:12px 20px 16px; } .cipherMeta { margin-bottom:10px; } .cipherBox { height:54px; width:48px; } .clueGrid { gap:6px; margin:12px 0; } .medallion { min-height:51px; } .clueContent { padding:22px; } .prompt { font-size:27px; margin-top:16px; } .clueArtwork > div { min-height:230px; } }
+.medallion { position:relative; }
+.medallion > span { font-size:22px; font-weight:700; }
+.medallion > svg { position:absolute; right:5px; bottom:5px; }
+.cipherBox > span { color:#a9b6cc; font:600 26px var(--font-sans); }
+.cipherAltar { background:#ffffffd9; border-color:#93b4dc85; box-shadow:0 8px 25px #4f77a215; }
+.cipherMeta { color:#5079a4; }
+.cipherBox { background:#e9f2ff; color:#577ba4; border-color:#a8c1df; box-shadow:inset 0 0 14px #afcdee30; }
+.cipherBox > span { color:#6d8db1; }
+.revealedCipher { background:#4c8bca; color:#fff; border-color:#3880c4; }
+.selector { background:#ffffffeb; border-color:#a1bddd80; }
+.medallion { background:#ecf3fd; border-color:#c3d3e7; color:#6587af; }
+.medallion:hover { background:#d9eaff; }
+.medallion.active { background:#4b88c9; color:#fff; border-color:#3978ba; }
+.medallion.solved:not(.active) { background:#e0f0e9; color:#45826b; }
+.clueStage { background:#fffffff0; border-color:#a6c0df80; box-shadow:0 12px 28px #5276a113; }
+.clueArtwork { background:#eff5fd; }
+.prompt { color:#2a4e79; }
+.answer { background:#edf5ff; border-color:#6495c6; }
+.answer > span { color:#587b9e; }
+.answer strong { color:#2b639f; }
+.answer p { color:#3d5f85; }
+.answer small { color:#6c85a2; }
+.solvedText { color:#39745d; }
+.soloForm input,.container select { background:#f7fbff; border-color:#9cb9db; color:#2b4f77; }
+.soloForm p { color:#ab4d52; }
+.completed { background:#e7f2ef; border-color:#96b9ac; color:#3a6e60; }
+.completed p { color:#557b71; }
+@media(max-width:700px) { .clueArtwork figcaption { background:#f4f8ffeb; } }

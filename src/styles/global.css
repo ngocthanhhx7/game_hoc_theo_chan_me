@@ -1,0 +1,115 @@
+@import './tokens.css';
+@import './typography.css';
+@import './motion.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f0f7ff;
+  color: #274667;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #f0f7ff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f7ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-marian-blue);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-midnight-navy);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sacred-gold);
+}
+
+/* Interactive elements base styles */
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all var(--transition-normal);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid var(--color-sacred-gold);
+  outline-offset: 3px;
+  box-shadow: var(--glow-gold);
+}
+
+/* Glass panel utility */
+.stained-glass-panel {
+  background: linear-gradient(
+    145deg,
+    rgba(22, 44, 87, 0.75) 0%,
+    rgba(13, 30, 61, 0.85) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-cathedral);
+}
+
+.gothic-arch-frame {
+  border: 2px solid var(--color-sacred-gold);
+  border-radius: var(--radius-gothic);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Text selections */
+::selection {
+  background-color: var(--color-marian-blue);
+  color: var(--color-gold-light);
+}
+
+/* Local photographs: decorative architecture, kept outside the reading surface. */
+main[data-view] { position:relative; isolation:isolate; color:#274667; background:#f2f8ff url('../../public/assets/images/marian-light-background.webp') center/cover fixed; }
+main[data-view='ROUND_1'] { background-color:#edf5ff; }
+main[data-view='ROUND_3'] { background-color:#f5f9fe; }
+.game-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:10px; padding:14px 18px; border:1px solid #d6b36b28; background:#15233bed; border-radius:8px; }
+.game-toolbar > span { color:var(--color-sacred-gold); font-size:11px; letter-spacing:.06em; margin-right:auto; }
+.game-toolbar button { min-height:44px; }
+.game-eyebrow { display:flex; align-items:center; gap:8px; color:var(--color-sacred-gold); font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+.game-heading { font-family:var(--font-serif); color:var(--color-gold-light); font-size:clamp(24px,2.4vw,36px); font-weight:600; letter-spacing:0; text-shadow:none; line-height:1.25; }
+.game-note { color:#bdc7d9; font-size:12px; line-height:1.7; }
+.game-help { color:#cbd1df; font-size:13px; line-height:1.7; }
+.game-help summary { cursor:pointer; color:var(--color-sacred-gold); min-height:40px; display:flex; align-items:center; }
+.game-help p { padding-bottom:14px; max-width:750px; }
+button { touch-action:manipulation; }
+select:focus-visible, summary:focus-visible { outline:2px solid var(--color-sacred-gold); outline-offset:4px; }
+@media(max-width:700px) { main[data-view] { background-attachment:scroll; } .game-toolbar { padding:12px; gap:8px; } .game-toolbar > span { flex-basis:100%; } .game-toolbar button { flex:1 1 130px; padding-inline:10px; font-size:13px; white-space:normal; } }
+html:fullscreen #root > header, html:fullscreen #root > footer { display:none; }
+html:fullscreen main[data-view] { min-height:100dvh; }
+
+/* Marian blue / ivory UI. Artwork retains its original palette. */
+.game-heading { color:#28568c; text-shadow:none; }
+.game-eyebrow { color:#47729e; }
+.game-note,.game-help { color:#526c8b; }
+.game-help summary { color:#366da6; }
+.game-toolbar { background:#ffffffed; border-color:#95b6dc70; box-shadow:0 4px 16px #234d9410; }
+.game-toolbar > span { color:#547294; }
+:fullscreen #root { background:#edf5ff; }

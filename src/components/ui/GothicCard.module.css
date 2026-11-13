@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(22, 44, 87, 0.78) 0%,
+    rgba(13, 30, 61, 0.9) 100%
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-cathedral);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.gothicArch {
+  border-radius: var(--radius-gothic);
+  border-top: 2px solid var(--color-sacred-gold);
+}
+
+.filigreeTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  opacity: 0.85;
+}
+
+.goldLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-sacred-gold) 50%,
+    transparent 100%
+  );
+}
+
+.fleurDeLis {
+  color: var(--color-gold-light);
+  font-size: 1.15rem;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(245, 223, 158, 0.8);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-gold-light);
+  margin-bottom: var(--space-1);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--color-muted-teal);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+.card { background:#ffffffed; border-color:#abc3df80; box-shadow:0 8px 28px #4b79a51a; backdrop-filter:none; }
+.gothicArch { border-top-color:#98b8d9; }
+.title { color:#3d6da0; }
+.subtitle { color:#5e7e9e; }
+.fleurDeLis { color:#ab8b4e; text-shadow:none; }

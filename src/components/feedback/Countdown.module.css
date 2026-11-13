@@ -1,0 +1,8 @@
+.clock { display:flex; align-items:center; gap:12px; color:#efd399; background:#192b45; border:1px solid #d6b36b33; border-radius:14px; padding:10px 18px; }
+.clock span { display:block; font:800 28px/1.1 var(--font-sans); font-variant-numeric:tabular-nums; letter-spacing:.04em; white-space:nowrap; }
+.clock small { display:block; color:#c2ccdc; font-size:10px; margin-top:3px; }
+.urgent { color:#ffb9ac; border-color:#ffb9ac; }
+@media(max-width:600px) { .clock { padding:10px 12px; } .clock span { font-size:25px; } }
+.clock { background:#e8f1fd; color:#2c65a2; border-color:#92b4dc70; }
+.clock small { color:#58799b; }
+.urgent { color:#a64746; border-color:#bf7373; }

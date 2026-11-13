@@ -1,0 +1,27 @@
+.transition { position:fixed; inset:0; z-index:180; display:grid; place-items:center; background:linear-gradient(90deg,#061126d9,#0c1b32db),url('../../../public/assets/images/marian-background.webp') center/cover; animation:curtainIn .35s ease-out; }
+.arch { position:absolute; width:min(70vw,600px); height:90vh; top:15vh; border:1px solid #e4c88b55; border-radius:50% 50% 0 0; box-shadow:0 0 0 16px #d6b36b09,0 0 0 18px #d6b36b22; animation:archIn 1s ease-out; }
+.introText { position:relative; text-align:center; padding:30px; max-width:90vw; animation:textIn .55s ease-out; }
+.number { display:block; font:italic clamp(64px,10vw,128px)/1 var(--font-serif); color:#d6b36b; opacity:.6; }
+.hand { font:28px var(--font-hand); color:#e5cf9f; margin-block:20px 10px; }
+.introText h2 { font:600 clamp(30px,5vw,65px) var(--font-serif); color:#f7eddb; margin-bottom:16px; }
+.introText > p:last-of-type { color:#d4d9e4; }
+.introText button { min-height:44px; display:inline-flex; align-items:center; gap:8px; padding:10px 25px; margin-top:25px; color:#16263d; background:#e5c78b; border-radius:30px; font-size:14px; }
+.feedback { position:fixed; z-index:190; bottom:28px; left:50%; transform:translateX(-50%); width:max-content; max-width:calc(100vw - 32px); display:flex; align-items:center; gap:16px; padding:20px 28px; background:#edf1e9; color:#193c3a; border:1px solid #d6b36b; border-radius:18px 18px 18px 3px; box-shadow:0 12px 50px #0006; pointer-events:none; animation:feedbackIn .3s ease-out; }
+.feedback > svg { flex-shrink:0; }
+.feedback strong { font:800 21px var(--font-sans); }
+.feedback p { font-size:14px; }
+.celebration { bottom:auto; top:42%; background:#10243ef5; color:#f0d39c; padding:36px; }
+.celebration strong { font:30px var(--font-hand); }
+@keyframes curtainIn { from{opacity:0} to{opacity:1} }
+@keyframes archIn { from{transform:translateY(100px);opacity:0} to{transform:translateY(0);opacity:1} }
+@keyframes textIn { from{transform:translateY(20px);opacity:0} to{transform:translateY(0);opacity:1} }
+@keyframes feedbackIn { from{opacity:0;margin-bottom:-15px} to{opacity:1;margin-bottom:0} }
+@media(max-width:600px) { .feedback { padding:16px; bottom:18px; } .feedback strong { font-size:18px; } .feedback p { font-size:12px; } .celebration { bottom:auto; } .arch { width:85vw; } }
+.transition { background:linear-gradient(90deg,#edf6ffc9,#edf6ffab),url('../../../public/assets/images/marian-light-background.webp') center/cover; }
+.arch { border-color:#80a9d273; box-shadow:0 0 0 16px #7fafd00d,0 0 0 18px #a2bedf66; }
+.number { color:#6e9dce; }
+.hand { color:#5b85b0; }
+.introText h2 { color:#2d6098; }
+.introText > p:last-of-type { color:#587b9e; }
+.introText button { color:#fff; background:#4d8ac9; }
+.celebration { background:#f7fcfff5; color:#336a9e; border-color:#9abfe3; }

@@ -1,0 +1,66 @@
+:root {
+  /* Sacred Color Palette */
+  --color-midnight-navy: #061126;
+  --color-cathedral-blue: #0d1e3d;
+  --color-marian-blue: #234d94;
+  --color-marian-sky: #4f80cf;
+  --color-sacred-gold: #d6b36b;
+  --color-gold-light: #356aa0;
+  --color-gold-dark: #9a7629;
+  --color-warm-ivory: #28476a;
+  --color-ivory-dim: #54708e;
+  --color-muted-teal: #547995;
+  --color-ruby-red: #9e2a2b;
+  --color-emerald-green: #2d6a4f;
+  --color-stained-amber: #e76f51;
+
+  /* Semantic UI Surfaces */
+  --bg-primary: #f2f8ff;
+  --bg-surface: rgba(255, 255, 255, 0.94);
+  --bg-surface-elevated: #ffffff;
+  --bg-surface-glass: rgba(247, 251, 255, 0.9);
+  --bg-gold-glass: rgba(214, 179, 107, 0.12);
+
+  /* Borders & Highlights */
+  --border-gold: rgba(214, 179, 107, 0.35);
+  --border-gold-bright: rgba(245, 223, 158, 0.8);
+  --border-glass: rgba(251, 248, 240, 0.15);
+  --border-blue: rgba(79, 128, 207, 0.3);
+
+  /* Shadows & Glows */
+  --glow-gold: 0 0 24px rgba(214, 179, 107, 0.45);
+  --glow-gold-intense: 0 0 45px rgba(245, 223, 158, 0.7);
+  --glow-marian: 0 0 30px rgba(79, 128, 207, 0.4);
+  --shadow-cathedral: 0 10px 30px rgba(45, 94, 145, 0.12);
+  --shadow-stained-glass: inset 0 0 16px rgba(214, 179, 107, 0.25), 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  /* Typography Scale */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Nunito', 'Segoe UI', sans-serif;
+  --font-hand: 'Patrick Hand', cursive;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-gothic: 24px 24px 6px 6px; /* Inspired by pointed arches */
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}

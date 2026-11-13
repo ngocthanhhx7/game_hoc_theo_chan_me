@@ -1,0 +1,63 @@
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(214, 179, 107, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(245, 223, 158, 0.7);
+  }
+}
+
+@keyframes divineShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: gentleFloat 4s infinite ease-in-out;
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 40s linear infinite;
+}
+
+/* Reduced Motion Handling */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.reduced-motion *, body.reduced-motion ::before, body.reduced-motion ::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}

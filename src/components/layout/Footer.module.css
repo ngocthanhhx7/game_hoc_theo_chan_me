@@ -1,0 +1,13 @@
+.footer { margin-top:auto; padding:14px clamp(20px,4vw,60px); background:#061126; border-top:1px solid #c8ac6d33; font-size:11px; color:#c3cfe1; }
+.container { max-width:1440px; margin:auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px 24px; }
+.eventInfo { color:#e1c996; }
+.shortcutsHint { color:#abbcd5; }
+.credits { font-size:11px; }
+.credits summary { cursor:pointer; min-height:32px; display:flex; align-items:center; color:#e1c996; }
+.credits[open] { flex-basis:100%; }
+.credits p { margin:8px 0; line-height:1.7; }
+.credits a { color:#e1c996; text-underline-offset:3px; }
+@media(max-width:600px) { .container { justify-content:center; text-align:center; } .shortcutsHint { display:none; } }
+.footer { background:#edf5ff; border-color:#a4bfdf80; color:#4a6d94; }
+.eventInfo,.credits summary,.credits a { color:#476c96; }
+.shortcutsHint { color:#617e9f; }

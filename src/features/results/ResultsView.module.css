@@ -1,0 +1,214 @@
+.container {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.divineGlow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 223, 158, 0.25) 0%,
+    rgba(79, 128, 207, 0.25) 45%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  width: 100%;
+  background: linear-gradient(
+    145deg,
+    rgba(22, 44, 87, 0.92) 0%,
+    rgba(13, 30, 61, 0.98) 100%
+  );
+  border: 2px solid var(--border-gold-bright);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-cathedral), var(--glow-gold-intense);
+}
+
+.trophyAura {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(245, 223, 158, 0.3) 0%,
+    rgba(214, 179, 107, 0.1) 70%
+  );
+  border: 2px solid var(--color-gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  box-shadow: 0 0 35px rgba(245, 223, 158, 0.6);
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.trophyIcon {
+  color: var(--color-gold-light);
+}
+
+.laurelRing {
+  position: absolute;
+  top: -8px;
+  color: var(--color-gold-light);
+  font-size: 1.4rem;
+}
+
+.championBadge {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  color: var(--color-muted-teal);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.championName {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--color-gold-light);
+  margin-bottom: var(--space-1);
+}
+
+.championScore {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: var(--space-6);
+}
+
+.championScore span {
+  font-size: 1.1rem;
+  color: var(--color-sacred-gold);
+}
+
+/* Spiritual Message Box */
+.messageBox {
+  background: rgba(8, 22, 47, 0.7);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  text-align: left;
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(214, 179, 107, 0.3);
+  padding-bottom: var(--space-2);
+}
+
+.messageIcon {
+  color: var(--color-gold-light);
+}
+
+.messageHeader h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-gold-light);
+  margin: 0;
+}
+
+.messageContent {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-ivory-dim);
+  font-style: italic;
+  margin-bottom: var(--space-3);
+}
+
+.eventSignature {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-muted-teal);
+  text-align: right;
+  font-style: normal;
+}
+
+/* Ranking Pills */
+.rankingPills {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--space-8);
+}
+
+.teamPill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.4rem 0.9rem;
+  background: rgba(13, 30, 61, 0.7);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+}
+
+.pillRank {
+  font-weight: 700;
+  color: var(--color-gold-light);
+}
+
+.pillDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.pillTitle {
+  color: var(--color-warm-ivory);
+}
+
+.pillPts {
+  font-weight: 700;
+  color: var(--color-gold-light);
+}
+
+.actionsBar {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .championName {
+    font-size: 2rem;
+  }
+  .championScore {
+    font-size: 2.2rem;
+  }
+}
+.card { background:#ffffffeb; border-color:#b8cde6; box-shadow:0 15px 50px #6188ae20; }
+.championScore { color:#3674af; }
+.messageBox { background:#f3f8ff; border-color:#bdcfe7; }
+.teamPill { background:#eaf3ff; border-color:#b7cde5; }
+.trophyAura { animation:none; box-shadow:none; border-color:#c8ab71; background:#faf2de; }
+.trophyIcon,.laurelRing { color:#a58544; }

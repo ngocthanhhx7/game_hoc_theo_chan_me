@@ -1,0 +1,171 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-gold-light);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: var(--space-6);
+}
+
+.fieldGroup {
+  margin-bottom: var(--space-4);
+}
+
+.fieldGroup label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-ivory-dim);
+  margin-bottom: var(--space-2);
+}
+
+.select, .input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  background: rgba(8, 22, 47, 0.85);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-sm);
+  color: var(--color-warm-ivory);
+  font-size: 0.95rem;
+}
+
+.rowFields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.btnRow {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.desc {
+  color: var(--color-ivory-dim);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-5);
+}
+
+.backupActions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.uploadLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(13, 30, 61, 0.6);
+  color: var(--color-gold-light);
+  border: 1px solid var(--border-gold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.uploadLabel:hover {
+  background: rgba(214, 179, 107, 0.15);
+  border-color: var(--color-gold-light);
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.successMessage {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: #52b788;
+  font-size: 0.9rem;
+  margin-top: var(--space-4);
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: var(--space-4);
+}
+
+.prefList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.prefRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  border-bottom: 1px solid rgba(251, 248, 240, 0.08);
+  padding-bottom: var(--space-4);
+}
+
+.prefRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.prefRow strong {
+  color: var(--color-warm-ivory);
+  font-size: 0.95rem;
+}
+
+.prefRow p {
+  color: var(--color-muted-teal);
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
+.resetModalBody p {
+  color: var(--color-ivory-dim);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .rowFields {
+    grid-template-columns: 1fr;
+  }
+}
+.select,.input { background:#f5faff; border-color:#a9c3df; color:#315878; font-size:17px; }
+.uploadLabel { background:#eaf3ff; border-color:#adc7e4; color:#3b6d9f; }
+.successMessage { color:#32734f; }
+.errorMessage { color:#a74d56; }
+.prefRow { border-color:#b1c6df66; }
+.btnRow { flex-wrap:wrap; }

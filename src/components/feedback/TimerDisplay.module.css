@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.svg {
+  transform: rotate(-90deg);
+  filter: drop-shadow(0 0 10px rgba(214, 179, 107, 0.3));
+}
+
+.track {
+  fill: rgba(13, 30, 61, 0.85);
+  stroke: rgba(214, 179, 107, 0.2);
+}
+
+.indicator {
+  fill: none;
+  stroke: var(--color-sacred-gold);
+  transition: stroke-dashoffset 0.25s linear, stroke var(--transition-normal);
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.timeNumber {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--color-gold-light);
+  line-height: 1;
+}
+
+.timeUnit {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ivory-dim);
+}
+
+/* Urgent state (last 5 seconds) */
+.urgent .indicator {
+  stroke: var(--color-ruby-red);
+}
+
+.urgent .timeNumber {
+  color: #ff6b6b;
+  text-shadow: 0 0 12px rgba(255, 107, 107, 0.8);
+  animation: pulseNumber 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseNumber {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}

@@ -1,0 +1,118 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-gold-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.paragraph {
+  line-height: 1.7;
+  color: var(--color-ivory-dim);
+}
+
+.dogmaList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  color: var(--color-ivory-dim);
+  line-height: 1.6;
+}
+
+.dogmaList strong {
+  color: var(--color-gold-light);
+}
+
+.cultusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.cultusItem {
+  background: rgba(8, 22, 47, 0.6);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.cultusTag {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  background: rgba(214, 179, 107, 0.2);
+  color: var(--color-gold-light);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.cultusItem h4 {
+  font-size: 1.05rem;
+  color: var(--color-warm-ivory);
+  margin-bottom: var(--space-2);
+}
+
+.cultusItem p {
+  font-size: 0.82rem;
+  color: var(--color-ivory-dim);
+  line-height: 1.5;
+}
+
+.roundStep {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  color: var(--color-ivory-dim);
+  line-height: 1.6;
+}
+
+.stepNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-marian-blue);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  border: 1px solid var(--border-gold);
+}
+
+.footerAction {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .cultusGrid {
+    grid-template-columns: 1fr;
+  }
+}
